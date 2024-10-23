@@ -1,4 +1,4 @@
-package com.growww
+package com.growww_clones
 
 import android.app.Application
 import com.facebook.react.PackageList

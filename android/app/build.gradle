@@ -77,9 +77,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.growww"
+    namespace "com.growww_clones"
     defaultConfig {
-        applicationId "com.growww"
+        applicationId "com.growww_clones"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -110,6 +110,8 @@ android {
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
+    implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
+    implementation ('com.google.android.gms:play-services-auth:19.0.0')
 
     if (hermesEnabled.toBoolean()) {
         implementation("com.facebook.react:hermes-android")
@@ -117,3 +119,11 @@ dependencies {
         implementation jscFlavor
     }
 }
+
+
+project.ext.vectoricons = [
+    iconFontNames: [ 'MaterialCommunityIcons.ttf', 'EvilIcons.ttf',"MaterialIcons.ttf" ,"Ionicons.ttf","FontAwesome.ttf","AntDesign.ttf" ] // Specify font files
+]
+
+apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
+apply plugin: "com.google.gms.google-services"
