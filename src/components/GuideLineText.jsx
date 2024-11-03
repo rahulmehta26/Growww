@@ -61,6 +61,7 @@ const styles = StyleSheet.create({
         padding: 10,
         borderRadius: 5,
         marginVertical: 10,
+        gap:10,
     },
 
     text:{

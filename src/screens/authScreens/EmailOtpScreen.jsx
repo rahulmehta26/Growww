@@ -9,6 +9,7 @@ import { goBack, navigate } from '../../utility/NavUtils';
 import CustomBtn from '../../components/CustomBtn';
 import Timer from '../../components/Timer';
 import { logo_text } from '../../utility/imageUtils';
+import { GlobalStyles } from '../../styles/GlobalStyle';
 
 const EmailOtpScreen = ({route}) => {
 
@@ -32,7 +33,7 @@ const EmailOtpScreen = ({route}) => {
     // );
 
     setTimeout(() => {
-      navigate("EmailPassScreen", {
+      navigate("SetPassScreen", {
         email:route?.params?.email
       })
       setLoading(false);
@@ -85,7 +86,7 @@ const EmailOtpScreen = ({route}) => {
       />
 
 <View
-      style = {styles.btnContainer}
+      style = {GlobalStyles.bottomBtn}
       >
 
       <CustomBtn 
@@ -114,14 +115,6 @@ const styles = StyleSheet.create({
     height: '100%',
     resizeMode: 'contain',
   },
-
-  btnContainer:{
-    position: "absolute",
-    bottom: 10,
-    width: "100%",
-    right: 0,
-    left: 20,
-  }
 });
 
 export default EmailOtpScreen;

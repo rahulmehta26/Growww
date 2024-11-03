@@ -4,6 +4,7 @@
 /* eslint-disable quotes */
 import AccProtectedScreen from "../screens/authScreens/AccProtectedScreen";
 import AuthVerifySCreen from "../screens/authScreens/AuthVerifySCreen";
+import BiometricVerification from "../screens/authScreens/BiometricVerification";
 import ConfirmPinScreen from "../screens/authScreens/ConfirmPinScreen";
 import DetailScreen from "../screens/authScreens/DetailScreen";
 import EmailOtpScreen from "../screens/authScreens/EmailOtpScreen";
@@ -15,6 +16,9 @@ import PhoneScreen from "../screens/authScreens/PhoneScreen";
 import PinScreen from "../screens/authScreens/PinScreen";
 import ProfileScreen from "../screens/authScreens/ProfileScreen";
 import RegisterScreen from "../screens/authScreens/RegisterScreen";
+import ResetPin from "../screens/authScreens/ResetPin";
+import SetPassScreen from "../screens/authScreens/SetPassScreen";
+import HomeScreen from "../screens/dashboardScreen/HomeScreen";
 import SplashScreen from "../screens/splashScreen/SplashScreen";
 import StockDetails from "../stockTools/StockDetails";
 import TradingView from "../stockTools/TradingView";
@@ -93,6 +97,21 @@ export const authQueue = [
         component: ProfileScreen,
     },
 
+    {
+        name: 'SetPassScreen',
+        component: SetPassScreen,
+    },
+
+    {
+        name: 'BiometricVerification',
+        component : BiometricVerification,
+    },
+
+    {
+        name: 'ResetPin',
+        component : ResetPin,
+    },
+
 ] 
 
 export const dashBoardScreen = [
@@ -100,6 +119,11 @@ export const dashBoardScreen = [
     {
         name: 'BottomTab',
         component: BottomTab ,
+    },
+
+    {
+        name: 'HomeScreen',
+        component: HomeScreen ,
     },
 
     {

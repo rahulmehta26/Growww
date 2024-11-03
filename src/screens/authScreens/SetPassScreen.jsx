@@ -4,17 +4,15 @@ import React, {useState} from 'react';
 import CustomSafeAreaView from '../../components/CustomSafeAreaView';
 import BackButton from '../../components/BackButton';
 import {normalizeHeight} from '../../utility/ScreenDimensions';
-import {goBack, navigate, resetAndNavigate} from '../../utility/NavUtils';
+import {goBack, resetAndNavigate} from '../../utility/NavUtils';
 import CustomInput from '../../components/CustomInput';
 import CustomBtn from '../../components/CustomBtn';
 import GuideLineText from '../../components/GuideLineText';
 import {validatePassword} from '../../utility/validationUtils';
 import {logo_text} from '../../utility/imageUtils';
 import {GlobalStyles} from '../../styles/GlobalStyle';
-import TouchableText from '../../components/TouchableText';
-import {RFValue} from 'react-native-responsive-fontsize';
 
-const EmailPassScreen = ({route}) => {
+const SetPassScreen = ({route}) => {
   const [password, setPassword] = useState('');
   const [passwordError, setPasswordError] = useState('');
   const [loading, setLoading] = useState(false);
@@ -61,7 +59,7 @@ const EmailPassScreen = ({route}) => {
       </TouchableOpacity>
 
       <CustomInput
-        label={'Enter Password'}
+        label={'Set Password'}
         returnKeyType="done"
         value={password}
         autoFocus={true}
@@ -73,16 +71,6 @@ const EmailPassScreen = ({route}) => {
         placeholder="8-20 Characters"
         onSubmitEditing={handleOnSubmit}
         password
-      />
-
-      <TouchableText
-        firstText="Forget Password"
-        style={styles.forgetText}
-        onPress={() =>
-          navigate('ForgetPassword', {
-            email: route?.params?.email,
-          })
-        }
       />
 
       <View style={GlobalStyles.bottomBtn}>
@@ -119,12 +107,6 @@ const styles = StyleSheet.create({
     height: '100%',
     resizeMode: 'contain',
   },
-
-  forgetText: {
-    fontSize: RFValue(12),
-    marginTop: 5,
-    alignSelf: 'flex-end',
-  },
 });
 
-export default EmailPassScreen;
+export default SetPassScreen;

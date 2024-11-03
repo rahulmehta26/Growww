@@ -9,6 +9,7 @@ import Timer from '../../components/Timer';
 import { opacity } from 'react-native-reanimated/lib/typescript/Colors';
 import CustomBtn from '../../components/CustomBtn';
 import { navigate } from '../../utility/NavUtils';
+import { GlobalStyles } from '../../styles/GlobalStyle';
 
 const PhoneScreen = () => {
 
@@ -196,7 +197,7 @@ const PhoneScreen = () => {
       }
 
       <View
-      style = {styles.btnContainer}
+      style = {GlobalStyles.bottomBtn}
       >
 
         {
@@ -281,11 +282,6 @@ const styles = StyleSheet.create({
     color:Colors.Text,
     opacity: 0.8,
     fontFamily:'Roboto-Regular'
-  },
-
-  btnContainer:{
-    justifyContent: "flex-end",
-    flex: 1,
   },
 
   errorText:{

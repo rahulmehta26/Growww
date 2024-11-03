@@ -4,7 +4,9 @@ import React from 'react';
 const BottomTab = () => {
   return (
     <View>
-      <Text>BottomTab</Text>
+      <Text
+      style = {{color:'red'}}
+      >BottomTab</Text>
     </View>
   );
 };
