@@ -1,42 +1,39 @@
 {
   "project_info": {
-    "project_number": "847123734748",
-    "project_id": "growwclone-e1fab",
-    "storage_bucket": "growwclone-e1fab.appspot.com"
+    "project_number": 
+    "project_id": 
+    "storage_bucket": ]
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:847123734748:android:ea7aee55891355b7231419",
+        "mobilesdk_app_id": 
         "android_client_info": {
-          "package_name": "com.growww_clones"
+          "package_name": 
         }
       },
       "oauth_client": [
         {
-          "client_id": "847123734748-rmcld2ccbg0v37dfhg8278c09p7bvabo.apps.googleusercontent.com",
-          "client_type": 1,
+          "client_id": 
+          "client_type": ,
           "android_info": {
-            "package_name": "com.growww_clones",
-            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+            "package_name": 
+            "certificate_hash": 
           }
         },
         {
-          "client_id": "847123734748-52e77q62j5ncp5p5li1n21dt1njnb78o.apps.googleusercontent.com",
-          "client_type": 3
+
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDEyZtwJzBSv5w7R2MNQ5YR1v7Egsl6JXM"
+          
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "847123734748-52e77q62j5ncp5p5li1n21dt1njnb78o.apps.googleusercontent.com",
-              "client_type": 3
             }
           ]
         }
